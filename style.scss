@@ -1,5 +1,4 @@
 // Colors
-//$desktopBg: #85aab6;
 $desktopBg: #9db1df;
 $header: #ffcb00;
 $border: #000000;
@@ -58,7 +57,6 @@ body {
   width: 100%;
   z-index: 40;
   header {
-    height: 32px;
     #logo {
       cursor: pointer;
       user-select: none;
@@ -66,8 +64,9 @@ body {
       top: 0px;
       left: 0px;
       font-size: 13px;
-      padding: 9px 16px 6px 44px;
+      padding: 0px 16px 0px 44px;
       width: 33px;
+      height: 30px;
       background: $window;
       text-decoration: none; 
       @extend %bordered;
@@ -79,10 +78,11 @@ body {
         pointer-events: none;
       }
       .menu {
-        top: 3px;
+        top: 8px;
         font-size: 13px;
-        color: #000;
+        color: $border;
         pointer-events: none;
+        position: absolute;
       }
     }
   }
@@ -305,7 +305,7 @@ body {
     z-index: 30;
     background: lighten($header, 20%);
     background: linear-gradient(135deg, #ffe066 25%, #e6b700 101%);
-    border: 1px solid #000000;
+    border: 1px solid $border;
   }
   article {
     background: $window;
