@@ -85,7 +85,7 @@ function openWindow(e) {
     theWindow.addEventListener('click', closeTab);
     theWindow.addEventListener('click', activateWindow);
     
-    if(window.matchMedia("(min-width: 960px)").matches) {
+    //if(window.matchMedia("(min-width: 960px)").matches) {
       theWindow.getElementsByClassName('headerContent')[0].onmousedown = function(event) {
         let shiftX = event.clientX - theWindow.getBoundingClientRect().left;
         let shiftY = event.clientY - theWindow.getBoundingClientRect().top;
@@ -134,7 +134,7 @@ function openWindow(e) {
       theWindow.ondragstart = function() {
         return false;
       };
-    }
+    //}
   });
 }
 
@@ -168,7 +168,7 @@ function fetchPage(url, attribute) {
 
         theWindow.classList.add('activeWindow');
 
-        if(window.matchMedia("(min-width: 960px)").matches) {
+        //if(window.matchMedia("(min-width: 960px)").matches) {
           let randomHeight = Math.floor(Math.random() * (20 - 15 + 1)) + 15;
           let randomWidth = Math.floor(Math.random() * (20 - 15 + 1)) + 15;
 
@@ -177,7 +177,7 @@ function fetchPage(url, attribute) {
 
           theWindow.style.top = randomHeight + '%';
           theWindow.style.left = randomWidth + '%';
-        }
+        //}
 
         let content = theWindow.querySelector('.content');
         content.innerHTML = body;

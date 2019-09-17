@@ -273,7 +273,7 @@ body {
   header {
     user-select: none;
     background: $header;
-    height: 26px;
+    height: 25px;
     width: 200px;
     text-align: center;
     position: relative;
@@ -358,9 +358,12 @@ body {
     }
   }
   @media screen and (max-width: 959px) {
-    position: relative !important;
-    left: 0 !important;
-    top: 0 !important;
+    // position: relative !important;
+    // left: 0 !important;
+    // top: 0 !important;
+    width: auto;
+    max-width: 320px;
+    max-height: 450px;
   }
   @media screen and (min-width: 960px) {
     max-width: 725px;
