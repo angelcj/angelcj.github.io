@@ -70,7 +70,6 @@ function openWindow(e) {
       </div>
       <article>
         <div class="content"></div>
-        <footer></footer>
       </article>
     </div>`;
     desktop.insertAdjacentHTML('beforeend', newWindow);
