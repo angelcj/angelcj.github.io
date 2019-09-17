@@ -6,10 +6,12 @@ $border: #000000;
 $window: #dcdad5;
 
 %bordered {
-  border-width: 1px;
-  border-style: solid;
-  border-color: lighten($window, 15%) darken($window, 20%) darken($window, 20%) lighten($window, 15%);
-  box-shadow: 0px 0px 0px 1px $border;
+  border: 1px solid $border;
+}
+
+%bordered-shadow {
+  border: 1px solid $border;
+  box-shadow: inset 1px 1px 0 0 #fff, 5px 5px 0 rgba(0,0,0,.2);
 }
 
 body {
@@ -306,12 +308,9 @@ body {
     height: 26px;
     width: 200px;
     text-align: center;
-    border-width: 1px;
-    border-style: solid;
-    border-color: lighten($header, 40%) darken($header, 15%) darken($header, 15%) lighten($header, 40%);
-    box-shadow: 0px 0px 0px 1px $border;
     position: relative;
-    filter: grayscale(100%) brightness(120%);
+    @extend %bordered-shadow;
+    border-bottom: 0;
   }
   .headerContent {
     user-select: none;
@@ -330,35 +329,20 @@ body {
     pointer-events: all;
     user-select: none;
     display: block;
-    height: 16px;
-    width: 16px;
+    height: 14px;
+    width: 14px;
     position: absolute;
-    background: lighten($header, 40%);
     left: 4px;
     top: 5px;
-    border-left: 1px solid darken($header, 15%);
-    border-top: 1px solid darken($header, 15%);
     z-index: 30;
-    filter: grayscale(100%) brightness(120%);
-    &:after {
-      content: '';
-      position: absolute;
-      display: block;
-      height: 13px;
-      width: 13px;
-      position: absolute;
-      left: 1px;
-      top: 1px;
-      border-right: 1px solid darken($header, 15%);
-      border-bottom: 1px solid darken($header, 15%);
-      background: lighten($header, 20%);
-      background: linear-gradient(135deg, lighten($header, 20%) 25%, darken($header, 5%) 101%);
-    }
+    background: lighten($header, 20%);
+    background: linear-gradient(135deg, #ffe066 25%, #e6b700 101%);
+    border: 1px solid #000000;
   }
   article {
     background: $window;
     position: relative;
-    @extend %bordered;
+    @extend %bordered-shadow;
   }
   .content {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
