@@ -261,7 +261,7 @@ body {
 
 .window {
   opacity: 0;
-  margin: 48px 0 0;
+  margin: 12px 0 0;
   padding: 0;
   max-width: 100%;
   width: 750px;
@@ -322,6 +322,7 @@ body {
     overflow: scroll;
     pointer-events: all;
     border: 1px solid $border;
+    max-height: 250px;
     img {
       max-width: 100%;
       box-shadow: 0px 0px 10px 1px lighten($window, 5%);
@@ -362,13 +363,16 @@ body {
     // left: 0 !important;
     // top: 0 !important;
     width: auto;
-    max-width: 320px;
-    max-height: 450px;
+    max-width: 340px;
+    .content {
+      max-height: 250px;
+    }
   }
   @media screen and (min-width: 960px) {
     max-width: 725px;
     width: auto;
     margin: 0;
+    margin: 48px 0 0;
     .content {
       max-height: 450px;
     }
