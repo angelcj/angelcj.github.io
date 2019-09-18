@@ -94,6 +94,7 @@ body {
     z-index: 50;
     bottom: -1px;
     background: $window;
+    border: 1px solid #000000;
     box-shadow: inset 1px 1px 0 0 #fff, 10px 5px 0px -5px rgba(0,0,0,0.2);
     ul {
       list-style: none;
@@ -304,8 +305,8 @@ body {
     left: 6px;
     top: 6px;
     z-index: 30;
-    background: lighten($header, 20%);
-    background: linear-gradient(135deg, #ffe066 25%, #e6b700 101%);
+    //background: linear-gradient(135deg, #ffe066 25%, #e6b700 101%);
+    background: linear-gradient(135deg, #ffbfb4 25%, #cc8c81 101%);
     border: 1px solid $border;
   }
   article {
@@ -318,7 +319,7 @@ body {
     font-size: 14px;
     line-height: 1.6;
     padding: 0 32px 14px;
-    margin: 2px;
+    margin: 4px;
     background: white;
     overflow: scroll;
     pointer-events: all;
