@@ -283,6 +283,7 @@ body {
     border-bottom: 0;
   }
   .headerContent {
+    cursor: move;
     user-select: none;
     pointer-events: all;
     font-size: 14px;
@@ -321,7 +322,7 @@ body {
     padding: 0 32px 14px;
     margin: 4px;
     background: white;
-    overflow: scroll;
+    overflow-y: scroll;
     pointer-events: all;
     border: 1px solid $border;
     max-height: 250px;
