@@ -1,52 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="icon" href="/angelcastillo.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="/angelcastillo.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css?family=Cousine:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Angel Castillo · Front-end Developement</title>
-</head>
-<body>
-
-  <main id="desktop">
-    
-    <div id="deskbar" class="">
-      <header>
-        <div id="logo" class="toggleMenu">
-          <img src="img/BeOS_kernel.png" alt="Àngel CJ Logo">
-          <span class="menu">
-            Menu
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/angelcastillo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>::: Àngel Castillo :::</title>
+  </head>
+  <body>
+    <div class="window">
+      <div class="window__header">
+        <div class="close-btn">
+          <span class="close-btn__relieve">
+            <span class="close-btn__inner-relieve"></span>
           </span>
         </div>
-      </header>
-      <nav id="primaryNav">
-        <ul>
-          <li><a href="about.html" class="menuLink" data-link="about"><img src="img/folder-users.png" alt="About"><span class="buttonText">About</span></a></li>
-          <li><a href="experience.html" class="menuLink" data-link="experience"><img src="img/BeOS_NetPositive.png" alt="Experience"><span class="buttonText">Experience</span></a></li>
-          <li><a href="skills.html" class="menuLink" data-link="skills"><img src="img/BeOS_flash.png" alt="Skills"><span class="buttonText">Skills</span></a></li>
-          <li><a href="projects.html" class="menuLink" data-link="projects"><img src="img/BeOS_Zip_disk.png" alt="Projects"><span class="buttonText">Projects</span></a></li>
-          <li><a href="contact.html" class="menuLink" data-link="contact"><img src="img/BeOS_mailbox.png" alt="Contact"><span class="buttonText">Contact</span></a></li>
-        </ul>
-      </nav>
-      <nav id="secondaryNav">
-        <ul id="tabsList">
-        </ul>
-      </nav>
-      <footer>
-        <div class="content">
-          <span id="theTime"></span>
+        <div class="window__spacer">
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
         </div>
-      </footer>
+        <div class="window__title">
+          <img src="static/internet.png" alt="Icon" class="icon" />
+          <span class="title">My personal website</span>
+        </div>
+        <div class="window__spacer">
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+        </div>
+        <div class="close-btn maximize">
+          <span class="close-btn__relieve">
+            <span class="close-btn__inner-relieve"></span>
+          </span>
+        </div>
+        <div class="close-btn minimize">
+          <span class="close-btn__relieve">
+            <span class="close-btn__inner-relieve"></span>
+          </span>
+        </div>
+      </div>
+      <div class="window__content">
+        <div class="window__text">
+          <h1 class="mt-0">Hola!</h1>
+          <h3>Who this guy?</h3>
+          <p>My name is Àngel Castillo and I'm from, and currently live in, Barcelona. I've lived for two years in London and for a year in the Basque Country. Beautiful places. Very rainy.</p>
+          <p>I'm a front-end web developer who likes developing front-end stuff for the web (hmmkay). I'm not married to any specific way of working nor technology, although sometimes I miss the simpler times of the old web, and with this website I tried to capture that: simple HTML and CSS with no JavaScript nor tracking codes of any kind. Also, a cool reto look to boot.</p>
+          <h3>My hobbies</h3>
+          <p>I like photography, hiking, watching movies (favourites: Blade Runner, Alien, Lost in Translation, Drive), reading, skating, and installing and testing old (and/or quirky) operating systems like Amiga, Macintosh (can you tell?), BeOS, Plan 9, MenuetOS, BSD, Minix, QNX and all sorts of Linux distros.</p>
+          <p>I also like coding small, mostly useless apps challenging myself to do it in as little amount of lines of code as possible. Riveting, I know.</p>
+          <h3>Technologies I use</h3>
+          <ul>
+            <li>HTML5, CSS3, SASS, PostCSS</li>
+            <li>JavaScript, React, Gatsby</li>
+            <li>WordPress, Shopify, OctoberCMS, Jekyll</li>
+            <li>... And others, including, but not limited to: Vagrant, Git, NPM, Gulp, Yarn, Twig, and several CSS frameworks like Bootstrap, Bulma, Foundation, Tachyons, etc</li>
+          </ul>
+          <p>Despite all the above, I always prefer to code by hand and with as little tooling/building as possible.</p>
+          <h3>Contact me</h3>
+          <p class="mb-0">Let's be honest, the only way you can find this site is through the link in the signature of my email, so there's no point on adding it here.
+          <br />It also means we've talked at least once, therefore I fully acknowledge and embrace the pointlessness of this website as a mean to reach new people.</p>
+        </div>
+      </div>
     </div>
-
-    <div id="contentarea"></div>
-
-  </main>
-
-  <script src="app.js"></script>
-</body>
+  </body>
 </html>
