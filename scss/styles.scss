@@ -20,6 +20,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  padding: 2rem;
 }
 h1, h2, h3, h4, h5, h6, strong {
   font-family: 'Chicago';
@@ -36,7 +37,7 @@ ul li {
 }
 .window {
   width: 600px;
-  max-width: calc(100% - 4rem);
+  max-width: 100%;
   position: relative;
   padding: 4px;
   background-color: #cccccc;
