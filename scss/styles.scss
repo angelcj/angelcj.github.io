@@ -139,14 +139,15 @@ ul li {
   margin-top: 1px;
 }
 .window__title {
-  line-height: 1.4;
   margin: 0 4px;
   flex-basis: auto;
   height: 16px;
-  font-weight: 400;
   font-size: 13px;
   text-align: center;
   display: flex;
+}
+.window__title .title {
+  line-height: 1.3; 
 }
 .window__title .icon {
   width: 16px;
