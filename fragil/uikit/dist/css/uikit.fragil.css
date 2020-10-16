@@ -12515,13 +12515,6 @@ iframe.uk-cover {
     padding: 10px 0;
   }
 }
-#products .uk-button-group {
-  flex-direction: column;
-}
-#products .product-contratar {
-  max-width: 165px;
-  margin-top: 1.5rem;
-}
 .project-play,
 .product-play {
   transform: scale(1.5);
