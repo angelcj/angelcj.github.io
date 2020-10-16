@@ -132,17 +132,11 @@
 //   }
 // }
 
-.project-play,
-.product-play {
+.project-play {
   transform: scale(1.5);
-  transition: all 0.75s ease-in-out;
-}
-
-.product-play:hover svg,
-.product-play:hover svg {
-  background-color: #0054e5;
-  color: #fff;
-  border-color: #0054e5;
+  svg {
+    transition: all 0.125s ease-in-out;
+  }
 }
 
 .project-play:hover svg,
@@ -150,6 +144,17 @@
   color: #0054e5;
 }
 
+#products .uk-button:hover,
+#products .uk-button:focus {
+  color: #fff;
+  background: #0054e5;
+  border-color: #0054e5;
+}
+
 .uk-heading-small {
   margin-bottom: 40px;
+}
+
+.uk-overlay-primary {
+  background: rgba(34, 34, 34, 0.6);
 }
