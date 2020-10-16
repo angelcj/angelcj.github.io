@@ -12518,6 +12518,17 @@ iframe.uk-cover {
 .project-play,
 .product-play {
   transform: scale(1.5);
+  transition: all 0.75s ease-in-out;
+}
+.product-play:hover svg,
+.product-play:hover svg {
+  background-color: #0054e5;
+  color: #fff;
+  border-color: #0054e5;
+}
+.project-play:hover svg,
+.project-play:focus svg {
+  color: #0054e5;
 }
 .uk-heading-small {
   margin-bottom: 40px;
