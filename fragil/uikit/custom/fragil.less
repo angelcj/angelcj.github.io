@@ -1,0 +1,138 @@
+// Import UIkit default theme (or uikit.less with only core styles)
+@import "../src/less/uikit.theme.less";
+
+// Your custom code goes here, e.g. mixins, variables.
+// See "how to create a theme" below for more info.
+
+// Global variables
+// ========================================================================
+
+//
+// Typography
+//
+
+@global-font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+@global-font-size: 16px;
+@global-line-height: 1.5; // 24px
+
+@global-2xlarge-font-size: 2.625rem; // 42px
+@global-xlarge-font-size: 2rem; // 32px
+@global-large-font-size: 1.5rem; // 24px
+@global-medium-font-size: 1.25rem; // 20px
+@global-small-font-size: 0.875rem; // 14px
+
+//
+// Colors
+//
+
+@global-color: #666;
+@global-emphasis-color: #333;
+@global-muted-color: #999;
+
+@global-link-color: #0054e5;
+@global-link-hover-color: #0f6ecd;
+
+@global-inverse-color: #fff;
+
+//
+// Backgrounds
+//
+
+@global-background: #fff;
+
+@global-muted-background: #f8f8f8;
+@global-primary-background: #0054e5;
+@global-secondary-background: #222;
+
+@global-success-background: #32d296;
+@global-warning-background: #faa05a;
+@global-danger-background: #f0506e;
+
+//
+// Borders
+//
+
+@global-border-width: 1px;
+@global-border: #e5e5e5;
+
+//
+// Box-Shadows
+//
+
+@global-small-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+@global-medium-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+@global-large-box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
+@global-xlarge-box-shadow: 0 28px 50px rgba(0, 0, 0, 0.16);
+
+//
+// Spacings
+//
+
+// Used in margin, section, list
+@global-margin: 20px;
+@global-small-margin: 10px;
+@global-medium-margin: 40px;
+@global-large-margin: 70px;
+@global-xlarge-margin: 140px;
+
+// Used in grid, column, container, align, card, padding
+@global-gutter: 30px;
+@global-small-gutter: 15px;
+@global-medium-gutter: 40px;
+@global-large-gutter: 70px;
+
+// Name:            Inverse
+// Description:     Inverse component style for light or dark backgrounds
+//
+// Component:       `uk-light`
+//                  `uk-dark`
+//
+// ========================================================================
+
+// Variables
+// ========================================================================
+
+@inverse-global-color-mode: light;
+
+@inverse-global-color: @global-inverse-color;
+@inverse-global-emphasis-color: @global-inverse-color;
+@inverse-global-muted-color: fade(@global-inverse-color, 50%);
+@inverse-global-inverse-color: @global-color;
+
+@inverse-global-primary-background: @global-inverse-color;
+@inverse-global-muted-background: fade(@global-inverse-color, 10%);
+
+@inverse-global-border: fade(@global-inverse-color, 20%);
+
+// CUSTOM STYLES
+@media (max-width: 959px) {
+  .product-description {
+    opacity: 1 !important;
+    transform: inherit !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .social-icons-nav {
+    display: none;
+  }
+  #navbar .uk-navbar-container {
+    padding: 10px 0;
+  }
+}
+
+#products {
+  .uk-button-group {
+    flex-direction: column;
+  }
+
+  .product-contratar {
+    max-width: 165px;
+    margin-top: 1.5rem;
+  }
+}
+
+.project-play,
+.product-play {
+  transform: scale(1.5);
+}
