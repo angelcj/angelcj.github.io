@@ -1,6 +1,2 @@
 /node_modules
-/tests/js/test*
-/tests/css/*
-themes.json
-.DS_Store
-/.idea
+/_node_modules
