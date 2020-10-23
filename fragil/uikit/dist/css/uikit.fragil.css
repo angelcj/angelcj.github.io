@@ -12514,6 +12514,10 @@ iframe.uk-cover {
   #navbar .uk-navbar-container {
     padding: 10px 0;
   }
+  .cs-buttons {
+    display: block;
+    margin-top: 1rem;
+  }
 }
 .project-play {
   transform: scale(1.5);
