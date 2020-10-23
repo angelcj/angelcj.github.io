@@ -12531,7 +12531,7 @@ iframe.uk-cover {
   background: #0054e5;
   border-color: #0054e5;
 }
-.uk-heading-small {
+.uk-heading-small:not(.no-bottom-margin) {
   margin-bottom: 40px;
 }
 .uk-overlay-primary {
