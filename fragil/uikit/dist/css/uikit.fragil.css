@@ -12518,6 +12518,13 @@ iframe.uk-cover {
     display: block;
     margin-top: 1rem;
   }
+  .uk-text-lead {
+    font-size: 1.125rem;
+  }
+  #footer,
+  .social-icons-footer.uk-text-right {
+    text-align: center !important;
+  }
 }
 .project-play {
   transform: scale(1.5);
